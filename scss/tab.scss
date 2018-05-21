@@ -1,0 +1,39 @@
+/* Tabs */
+
+.tabs {
+  -webkit-overflow-scrolling: touch;
+  align-items: stretch;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tabs ul {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+}
+
+.tabs.fullwidth li {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.tabs li {
+    display: block;
+}
+
+.tabs a {
+    align-items: center;
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1px;
+    padding: .5em 1em;
+    vertical-align: top;
+}

@@ -1,0 +1,87 @@
+.level {
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.level.transparent {
+  background-color: transparent !important;
+}
+
+.level, .level .start, .level .end {
+  display: flex;
+}
+
+.level .start, .level .end {
+  align-items: center;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.level .center {
+  justify-content: center;
+}
+
+.level .start {
+  justify-content: flex-start;
+}
+
+.level.center {
+  justify-content: center;
+}
+
+.level .end {
+  justify-content: flex-end;
+}
+
+.level .icons > *:not(:last-child) {
+  margin-right: 4px;
+}
+
+.level.no-grow > .item {
+  flex-grow: 0;
+}
+.level.center  * {
+  flex-grow: 0 !important;
+}
+.level .item {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.level > a.item, .level > button.item {
+  padding: .70rem 0.90rem;
+}
+
+.level.center > .item {
+  border: none;
+}
+
+.level:not(.end) > .item:not(:last-child) {
+  border-right: 1px solid #979797;
+}
+
+.level.start > .item {
+  border-right: 1px solid #979797;
+}
+
+.level.end > .item {
+  border-left: 1px solid #979797
+}
+
+.level.start {
+  justify-content: start;
+}
+
+.level.end {
+  justify-content: end;
+}
+
+.level.start > *, .level.end > * {
+  flex-grow: 0;
+}

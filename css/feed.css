@@ -1,0 +1,67 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.feed > *:not(.media) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.feed > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.feed > header > *:not(:first-child) {
+  margin-left: 10px;
+}
+
+.feed > header .btns {
+  margin-left: auto;
+  align-self: flex-start;
+}
+
+.feed .content:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
+.feed > header .infos {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.feed > header .infos > *:first-child {
+  font-size: 17px;
+}
+
+.feed > header .infos > *:last-child {
+  font-size: 13px;
+}
+
+.feed > .content {
+  padding: 10px;
+}
+
+.feed .media {
+  position: relative;
+}
+
+.feed > footer .level {
+  padding: .60rem 0 0;
+}
+
+@media screen and (max-width: 1088px) {
+  .feed {
+    min-width: auto;
+  }
+}

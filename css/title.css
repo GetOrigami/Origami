@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+h1 > .icon, h2 > .icon, h3 > .icon, h4 > .icon, h5 > .icon, h6 > .icon {
+  margin-right: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.title {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.subtitle {
+  color: #4a4a4a;
+  font-weight: 400 !important;
+  line-height: 1.25;
+  margin-top: -0.10rem;
+}
+
+.subtitle, .title {
+  word-break: normal;
+}
